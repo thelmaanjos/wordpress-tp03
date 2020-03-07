@@ -1,0 +1,11 @@
+---
+ - hosts: wordpressblogs
+   remote_user: thelma
+   become: yes
+
+   roles:
+   - server
+   - php
+   - mysql
+   - wordpress
+ 
